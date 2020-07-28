@@ -1,0 +1,76 @@
+$body-bg:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$icon-fnSize: 30px;
+
+
+
+
+body{
+    background: $body-bg;
+    color: $font-color;
+}
+
+.navbar{
+    border-bottom: 3px solid $primary-color;
+    background: #292b2c;
+    opacity: 0.7;
+}
+
+#home-section{
+    background: url('../img/bg2.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+
+    .dark-overlay{
+        background: rgba(0,0,0,0.5);
+        min-height: 700px;
+    }
+    .fa{
+        background:#fff ;
+        color: $primary-color;
+        padding: 3px;
+        font-size: $icon-fnSize;
+        border-radius: 5px;
+    }
+    .card-form{
+        opacity: 0.9;
+    }
+    .home-inner{
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+}
+
+#service-main-section{
+    // height: 100vh;
+    // background: repeating-linear-gradient(-45deg, white, white 50px, $primary-color 0, $primary-color 95px);
+    // display: block;
+    
+
+    .fa{
+        font-size: $icon-fnSize;
+        background: $body-bg;
+        color: $font-color;
+        padding: 4px;
+        border-radius: 5px;
+    }
+    
+}
+#about-main-section{
+    .fa{
+        background:#fff ;
+        color: $primary-color;
+        padding: 3px;
+        font-size: $icon-fnSize;
+        border-radius: 5px;
+    }
+}
+
+
+@media(max-width: 768px){
+    #home-section h1{
+        font-size: 36px;
+    }
+}
